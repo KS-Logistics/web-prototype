@@ -1,5 +1,5 @@
 import React from 'react';
-import type { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 import { StatusDisplay } from './StatusDisplay';
 
 const meta = {
@@ -40,7 +40,7 @@ All text content is configurable through props for internationalization support.
       control: 'text',
     },
   },
-} satisfies Meta<typeof StatusDisplay>;
+};
 
 export default meta;
 type Story = StoryObj<typeof StatusDisplay>;
@@ -48,7 +48,7 @@ type Story = StoryObj<typeof StatusDisplay>;
 /**
  * Default display showing a package in processing status (Chinese)
  */
-export const ChineseExample: Story = {
+export const ChineseExample = {
   args: {
     title: '您的包裹已进入打包流程',
     trackingLabel: '国际单号',
@@ -60,7 +60,7 @@ export const ChineseExample: Story = {
 /**
  * Example with English content
  */
-export const EnglishExample: Story = {
+export const EnglishExample = {
   args: {
     title: 'Your package is being processed',
     trackingLabel: 'Tracking Number',
@@ -72,7 +72,7 @@ export const EnglishExample: Story = {
 /**
  * Example with different tracking number format
  */
-export const DifferentTracking: Story = {
+export const DifferentTracking = {
   args: {
     ...ChineseExample.args,
     trackingNumber: 'CN8888',

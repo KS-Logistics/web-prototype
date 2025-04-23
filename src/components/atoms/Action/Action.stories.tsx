@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 import { Action } from './Action';
 
 const meta = {
@@ -8,19 +8,19 @@ const meta = {
     layout: 'centered',
   },
   tags: ['autodocs'],
-} satisfies Meta<typeof Action>;
+};
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const ViewDetails: Story = {
+export const ViewDetails = {
   args: {
     children: '查看详情',
     withArrow: true,
   },
 };
 
-export const View: Story = {
+export const View = {
   args: {
     variant: 'secondary',
     children: '查看',
@@ -28,13 +28,13 @@ export const View: Story = {
   },
 };
 
-export const Edit: Story = {
+export const Edit = {
   args: {
     children: '编辑',
   },
 };
 
-export const Disabled: Story = {
+export const Disabled = {
   args: {
     children: '查看详情',
     withArrow: true,
@@ -42,7 +42,7 @@ export const Disabled: Story = {
   },
 };
 
-export const AllActions: Story = {
+export const AllActions = {
   render: () => (
     <div style={{ 
       display: 'flex', 

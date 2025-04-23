@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 import ContainerDetail from './ContainerDetail';
 
 const meta: Meta<typeof ContainerDetail> = {
@@ -13,7 +13,7 @@ const meta: Meta<typeof ContainerDetail> = {
 export default meta;
 type Story = StoryObj<typeof ContainerDetail>;
 
-export const Default: Story = {
+export const Default = {
   args: {
     containerNumber: 'ABCD1234567',
     status: '进行中',
@@ -33,7 +33,7 @@ export const Default: Story = {
   },
 };
 
-export const Completed: Story = {
+export const Completed = {
   args: {
     containerNumber: 'WXYZ9876543',
     status: '已完成',

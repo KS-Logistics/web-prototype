@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 import { Badge } from './Badge';
 
 const meta = {
@@ -8,37 +8,37 @@ const meta = {
     layout: 'centered',
   },
   tags: ['autodocs'],
-} satisfies Meta<typeof Badge>;
+};
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const SingleDigit: Story = {
+export const SingleDigit = {
   args: {
     count: 9,
   },
 };
 
-export const DoubleDigits: Story = {
+export const DoubleDigits = {
   args: {
     count: 99,
   },
 };
 
-export const WithOverflow: Story = {
+export const WithOverflow = {
   args: {
     count: 999,
     overflowCount: 99,
   },
 };
 
-export const Dot: Story = {
+export const Dot = {
   args: {
     dot: true,
   },
 };
 
-export const WithContent: Story = {
+export const WithContent = {
   render: () => (
     <div style={{ display: 'flex', gap: '24px' }}>
       <Badge count={9}>

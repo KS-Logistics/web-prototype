@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 import { InfoMessage } from './InfoMessage';
 import { TipsMessage } from './TipsMessage';
 

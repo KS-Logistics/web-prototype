@@ -1,5 +1,5 @@
 import React from 'react';
-import type { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 import { AddressDisplay } from './AddressDisplay';
 
 const meta: Meta<typeof AddressDisplay> = {
@@ -30,7 +30,7 @@ const meta: Meta<typeof AddressDisplay> = {
 export default meta;
 type Story = StoryObj<typeof AddressDisplay>;
 
-export const Default: Story = {
+export const Default = {
   args: {
     name: 'Ashley',
     phone: '0411234121',
@@ -45,7 +45,7 @@ export const Default: Story = {
   },
 };
 
-export const WithUnit: Story = {
+export const WithUnit = {
   args: {
     ...Default.args,
     addressLine1: 'Unit 51/88',
@@ -55,7 +55,7 @@ export const WithUnit: Story = {
   },
 };
 
-export const WithOrganization: Story = {
+export const WithOrganization = {
   args: {
     ...Default.args,
     organization: 'Example Company Pty Ltd',
@@ -63,7 +63,7 @@ export const WithOrganization: Story = {
   },
 };
 
-export const InternationalAddress: Story = {
+export const InternationalAddress = {
   args: {
     name: 'John Smith',
     phone: '0411234121',
@@ -79,7 +79,7 @@ export const InternationalAddress: Story = {
   },
 };
 
-export const LongAddress: Story = {
+export const LongAddress = {
   args: {
     ...Default.args,
     organization: 'Very Long Company Name Corporation International Pty Ltd',

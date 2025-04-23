@@ -1,5 +1,5 @@
 import React from 'react';
-import type { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 import { Tab } from './Tab';
 
 const meta = {
@@ -46,7 +46,7 @@ The component is designed to be used in navigation and content organization scen
       action: 'changed',
     },
   },
-} satisfies Meta<typeof Tab>;
+};
 
 export default meta;
 type Story = StoryObj<typeof Tab>;
@@ -55,7 +55,7 @@ type Story = StoryObj<typeof Tab>;
  * The filled style variant features equal-width tabs with a purple border container.
  * This style is suitable for primary navigation or when tabs have equal importance.
  */
-export const FilledStyle: Story = {
+export const FilledStyle = {
   args: {
     variant: 'filled',
     items: [
@@ -70,7 +70,7 @@ export const FilledStyle: Story = {
  * The underline style variant features tabs with bottom border indicators and optional badges.
  * This style is suitable for secondary navigation or content categorization.
  */
-export const UnderlineStyle: Story = {
+export const UnderlineStyle = {
   args: {
     variant: 'underline',
     items: [
@@ -84,7 +84,7 @@ export const UnderlineStyle: Story = {
 /**
  * Example showing both tab styles in a typical usage scenario.
  */
-export const TabExamples: Story = {
+export const TabExamples = {
   render: () => {
     const [activeKey1, setActiveKey1] = React.useState('1');
     const [activeKey2, setActiveKey2] = React.useState('1');

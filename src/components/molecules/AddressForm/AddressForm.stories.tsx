@@ -1,5 +1,5 @@
 import React from 'react';
-import type { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 import { AddressForm } from './AddressForm';
 import { ConfigProvider } from 'antd';
 import zhCN from 'antd/locale/zh_CN';
@@ -55,13 +55,13 @@ For production use, replace these with real API keys:
       },
     },
   },
-} satisfies Meta<typeof AddressForm>;
+};
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 // Decorator to provide language context
-const withLocale = (Story: any, { args }: any) => (
+const withLocale = (Story, { args }) => (
   <ConfigProvider locale={args.lang === 'zh' ? zhCN : enUS}>
     <div style={{ width: '100%', maxWidth: '600px', padding: '24px' }}>
       <Story />
@@ -71,7 +71,7 @@ const withLocale = (Story: any, { args }: any) => (
 
 // Base story configuration
 const baseArgs = {
-  onSubmit: (values: any) => console.log('Submit:', values),
+  onSubmit: (values) => console.log('Submit:', values),
   onCancel: () => console.log('Cancel'),
   apiKeys: {
     amap: process.env.STORYBOOK_AMAP_KEY || 'amap_dummy_key_1234567890',
@@ -79,7 +79,7 @@ const baseArgs = {
   },
 };
 
-export const ChineseEmpty: Story = {
+export const ChineseEmpty = {
   args: {
     ...baseArgs,
     lang: 'zh',
@@ -94,7 +94,7 @@ export const ChineseEmpty: Story = {
   },
 };
 
-export const EnglishEmpty: Story = {
+export const EnglishEmpty = {
   args: {
     ...baseArgs,
     lang: 'en',
@@ -109,7 +109,7 @@ export const EnglishEmpty: Story = {
   },
 };
 
-export const ChineseWithData: Story = {
+export const ChineseWithData = {
   args: {
     ...baseArgs,
     lang: 'zh',
@@ -137,7 +137,7 @@ export const ChineseWithData: Story = {
   },
 };
 
-export const EnglishWithData: Story = {
+export const EnglishWithData = {
   args: {
     ...baseArgs,
     lang: 'en',
@@ -165,7 +165,7 @@ export const EnglishWithData: Story = {
   },
 };
 
-export const ChineseInternationalAddress: Story = {
+export const ChineseInternationalAddress = {
   args: {
     ...baseArgs,
     lang: 'zh',
@@ -194,7 +194,7 @@ export const ChineseInternationalAddress: Story = {
   },
 };
 
-export const EnglishInternationalAddress: Story = {
+export const EnglishInternationalAddress = {
   args: {
     ...baseArgs,
     lang: 'en',
@@ -223,7 +223,7 @@ export const EnglishInternationalAddress: Story = {
   },
 };
 
-export const WithSubmitting: Story = {
+export const WithSubmitting = {
   args: {
     ...ChineseWithData.args,
     isSubmitting: true,

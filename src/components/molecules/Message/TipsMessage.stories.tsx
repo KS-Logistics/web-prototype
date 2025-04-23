@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 import { TipsMessage } from './TipsMessage';
 
 const meta = {
@@ -28,12 +28,12 @@ Tips message component for displaying important notices:
     },
   },
   tags: ['autodocs'],
-} satisfies Meta<typeof TipsMessage>;
+};
 
 export default meta;
 type Story = StoryObj<typeof TipsMessage>;
 
-export const Default: Story = {
+export const Default = {
   args: {
     children: '截单日期为北京时间每周周日 24 点前，请在截单日期前支付，逾期的结果货物将滞留~',
     onClose: () => console.log('Close clicked'),

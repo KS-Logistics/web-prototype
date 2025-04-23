@@ -33,7 +33,7 @@ const meta = {
       description: 'Called after confirming in the modal dialog'
     },
   },
-} satisfies Meta<typeof OrderSummary>;
+};
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -66,7 +66,7 @@ const sampleData = {
   ],
 };
 
-export const Mobile: Story = {
+export const Mobile = {
   args: {
     data: sampleData,
   },

@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 import Button from './Button';
 
 const meta: Meta<typeof Button> = {
@@ -58,35 +58,35 @@ const meta: Meta<typeof Button> = {
 export default meta;
 type Story = StoryObj<typeof Button>;
 
-export const Primary: Story = {
+export const Primary = {
   args: {
     label: 'Primary Button',
     buttonVariant: 'primary',
   },
 };
 
-export const Secondary: Story = {
+export const Secondary = {
   args: {
     label: 'Secondary Button',
     buttonVariant: 'secondary',
   },
 };
 
-export const TextButton: Story = {
+export const TextButton = {
   args: {
     label: 'Text Button',
     buttonVariant: 'text',
   },
 };
 
-export const DangerButton: Story = {
+export const DangerButton = {
   args: {
     label: 'Danger Button',
     buttonVariant: 'danger',
   },
 };
 
-export const Disabled: Story = {
+export const Disabled = {
   args: {
     label: 'Disabled Button',
     buttonVariant: 'primary',
@@ -94,7 +94,7 @@ export const Disabled: Story = {
   },
 };
 
-export const Loading: Story = {
+export const Loading = {
   args: {
     label: 'Loading Button',
     buttonVariant: 'primary',
@@ -102,7 +102,7 @@ export const Loading: Story = {
   },
 };
 
-export const Large: Story = {
+export const Large = {
   args: {
     label: 'Large Button',
     buttonVariant: 'primary',
@@ -110,7 +110,7 @@ export const Large: Story = {
   },
 };
 
-export const Small: Story = {
+export const Small = {
   args: {
     label: 'Small Button',
     buttonVariant: 'primary',
@@ -118,7 +118,7 @@ export const Small: Story = {
   },
 };
 
-export const Block: Story = {
+export const Block = {
   args: {
     label: 'Block Button',
     buttonVariant: 'primary',
@@ -127,7 +127,7 @@ export const Block: Story = {
 };
 
 // Mobile-specific examples
-export const MobileFullWidth: Story = {
+export const MobileFullWidth = {
   args: {
     label: 'Full Width Mobile Button',
     buttonVariant: 'primary',
@@ -140,7 +140,7 @@ export const MobileFullWidth: Story = {
   },
 };
 
-export const MobileBottomFixed: Story = {
+export const MobileBottomFixed = {
   args: {
     label: 'Submit',
     buttonVariant: 'primary',
@@ -163,7 +163,7 @@ export const MobileBottomFixed: Story = {
   ],
 };
 
-export const MobilePrimarySecondary: Story = {
+export const MobilePrimarySecondary = {
   render: () => (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
       <Button 

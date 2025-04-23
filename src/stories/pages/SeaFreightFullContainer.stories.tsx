@@ -1,5 +1,5 @@
 import React from 'react';
-import type { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 import styled from 'styled-components';
 import { Layout } from 'antd';
 import Home from '../../pages/Home';
@@ -40,12 +40,12 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const HomePage: Story = {
+export const HomePage = {
   name: '首页',
   render: () => <Home />,
 };
 
-export const ShippingRoutePage: Story = {
+export const ShippingRoutePage = {
   name: '航线选择',
   render: () => (
     <ShippingRoute
@@ -55,7 +55,7 @@ export const ShippingRoutePage: Story = {
   ),
 };
 
-export const CargoDetailsPage: Story = {
+export const CargoDetailsPage = {
   name: '货物信息',
   render: () => (
     <CargoDetails
@@ -65,7 +65,7 @@ export const CargoDetailsPage: Story = {
   ),
 };
 
-export const OrderSummaryPage: Story = {
+export const OrderSummaryPage = {
   name: '订单确认',
   render: () => (
     <OrderSummary
@@ -75,7 +75,7 @@ export const OrderSummaryPage: Story = {
   ),
 };
 
-export const BookingSuccessPage: Story = {
+export const BookingSuccessPage = {
   name: '哨头号创建成功',
   render: () => (
     <BookingSuccess
@@ -92,7 +92,7 @@ export const BookingSuccessPage: Story = {
   ),
 };
 
-export const CargoInputPage: Story = {
+export const CargoInputPage = {
   name: '录入商品信息',
   render: () => (
     <CargoInput
@@ -103,7 +103,7 @@ export const CargoInputPage: Story = {
   ),
 };
 
-export const SpecialHandlingPage: Story = {
+export const SpecialHandlingPage = {
   name: '特处理',
   render: () => (
     <SpecialHandling
@@ -112,7 +112,7 @@ export const SpecialHandlingPage: Story = {
   ),
 };
 
-export const BookingDetailsPage: Story = {
+export const BookingDetailsPage = {
   name: '查看详情',
   render: () => (
     <BookingDetails

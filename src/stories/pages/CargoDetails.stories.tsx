@@ -30,11 +30,11 @@ const meta = {
     onBack: { action: 'onBack' },
     onNext: { action: 'onNext' },
   },
-} satisfies Meta<typeof CargoDetails>;
+};
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Mobile: Story = {
+export const Mobile = {
   args: {},
 }; 

@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 import StatusTag from './StatusTag';
 
 const meta: Meta<typeof StatusTag> = {
@@ -20,31 +20,31 @@ const meta: Meta<typeof StatusTag> = {
 export default meta;
 type Story = StoryObj<typeof StatusTag>;
 
-export const Processing: Story = {
+export const Processing = {
   args: {
     status: 'Processing',
   },
 };
 
-export const InTransit: Story = {
+export const InTransit = {
   args: {
     status: 'In Transit',
   },
 };
 
-export const Delayed: Story = {
+export const Delayed = {
   args: {
     status: 'Delayed',
   },
 };
 
-export const Delivered: Story = {
+export const Delivered = {
   args: {
     status: 'Delivered',
   },
 };
 
-export const Small: Story = {
+export const Small = {
   args: {
     status: 'In Transit',
     size: 'small',

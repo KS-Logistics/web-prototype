@@ -1,5 +1,5 @@
 import React from 'react';
-import type { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 import HomePage from '../../pages/Home';
 import { Layout } from 'antd';
 
@@ -47,13 +47,13 @@ const meta = {
       </Layout>
     ),
   ],
-} satisfies Meta<typeof HomePage>;
+};
 
 export default meta;
 type Story = StoryObj<typeof HomePage>;
 
 // Set mobile as the only story
-export const Mobile: Story = {
+export const Mobile = {
   args: {
     onMenuClick: () => console.log('Menu clicked'),
     onUserClick: () => console.log('User clicked'),

@@ -1,7 +1,7 @@
-import type { Preview } from "@storybook/react";
+import React from 'react';
+import { Preview } from "@storybook/react";
 import { ConfigProvider, theme } from 'antd';
 import zhCN from 'antd/locale/zh_CN';
-import React from 'react';
 
 const preview: Preview = {
   parameters: {
@@ -43,8 +43,8 @@ const preview: Preview = {
   globalTypes: {
     apiKeys: {
       defaultValue: {
-        amap: process.env.STORYBOOK_AMAP_KEY,
-        google: process.env.STORYBOOK_GOOGLE_PLACES_KEY,
+        amap: process.env.STORYBOOK_AMAP_KEY || 'amap_dummy_key_1234567890',
+        google: process.env.STORYBOOK_GOOGLE_PLACES_KEY || 'google_places_dummy_key_1234567890',
       },
     },
   },

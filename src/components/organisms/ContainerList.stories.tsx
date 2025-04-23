@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 import { ContainerList } from './ContainerList';
 
 const meta: Meta<typeof ContainerList> = {
@@ -17,4 +17,4 @@ const meta: Meta<typeof ContainerList> = {
 export default meta;
 type Story = StoryObj<typeof ContainerList>;
 
-export const Default: Story = {};
+export const Default = {};

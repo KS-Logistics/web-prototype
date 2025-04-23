@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 import AppLayout from './AppLayout';
 
 const meta: Meta<typeof AppLayout> = {
@@ -13,7 +13,7 @@ const meta: Meta<typeof AppLayout> = {
 export default meta;
 type Story = StoryObj<typeof AppLayout>;
 
-export const Default: Story = {
+export const Default = {
   args: {
     children: <div style={{ padding: '20px' }}>Content goes here</div>,
   },

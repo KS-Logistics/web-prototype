@@ -1,5 +1,5 @@
 import React from 'react';
-import type { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 import { ConfigProvider } from 'antd';
 import { AddAddressButton } from './AddressCard';
 
@@ -55,7 +55,7 @@ A button component for adding new addresses that uses Ant Design's theme tokens 
       </div>
     ),
   ],
-} satisfies Meta<typeof AddAddressButton>;
+};
 
 export default meta;
 type Story = StoryObj<typeof AddAddressButton>;
@@ -63,7 +63,7 @@ type Story = StoryObj<typeof AddAddressButton>;
 /**
  * Default example with Chinese text
  */
-export const Default: Story = {
+export const Default = {
   args: {
     text: '添加新地址',
   },
@@ -72,7 +72,7 @@ export const Default: Story = {
 /**
  * Example with English text
  */
-export const English: Story = {
+export const English = {
   args: {
     text: 'Add New Address',
   },
@@ -81,7 +81,7 @@ export const English: Story = {
 /**
  * Example with custom theme color
  */
-export const CustomTheme: Story = {
+export const CustomTheme = {
   args: {
     text: '添加新地址',
   },

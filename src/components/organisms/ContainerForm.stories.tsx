@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 import ContainerForm from './ContainerForm';
 import LanguageSwitcher from '../atoms/LanguageSwitcher';
 import '../../../src/i18n';
@@ -23,7 +23,7 @@ const meta: Meta<typeof ContainerForm> = {
 export default meta;
 type Story = StoryObj<typeof ContainerForm>;
 
-export const AddNew: Story = {
+export const AddNew = {
   args: {
     isEdit: false,
   },
@@ -34,7 +34,7 @@ export const AddNew: Story = {
   },
 };
 
-export const Edit: Story = {
+export const Edit = {
   args: {
     isEdit: true,
     initialValues: {

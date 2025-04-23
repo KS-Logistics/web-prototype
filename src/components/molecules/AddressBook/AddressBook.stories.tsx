@@ -1,5 +1,5 @@
 import React from 'react';
-import type { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 import { AddressBook } from './AddressBook';
 
 const meta: Meta<typeof AddressBook> = {
@@ -73,13 +73,13 @@ const sampleAddresses = [
   },
 ];
 
-export const Default: Story = {
+export const Default = {
   args: {
     addresses: sampleAddresses,
   },
 };
 
-export const WithSelection: Story = {
+export const WithSelection = {
   args: {
     addresses: sampleAddresses,
     selectedId: '1',
@@ -87,7 +87,7 @@ export const WithSelection: Story = {
   },
 };
 
-export const WithInteractions: Story = {
+export const WithInteractions = {
   args: {
     addresses: sampleAddresses,
     selectedId: '1',
@@ -97,7 +97,7 @@ export const WithInteractions: Story = {
   },
 };
 
-export const InternationalAddresses: Story = {
+export const InternationalAddresses = {
   args: {
     addresses: [
       ...sampleAddresses,

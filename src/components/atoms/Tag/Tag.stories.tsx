@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 import { Tag } from './Tag';
 
 const meta = {
@@ -8,46 +8,46 @@ const meta = {
     layout: 'centered',
   },
   tags: ['autodocs'],
-} satisfies Meta<typeof Tag>;
+};
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {
+export const Default = {
   args: {
     children: '标签',
   },
 };
 
-export const Primary: Story = {
+export const Primary = {
   args: {
     variant: 'primary',
     children: '标签',
   },
 };
 
-export const Success: Story = {
+export const Success = {
   args: {
     variant: 'success',
     children: '标签',
   },
 };
 
-export const Warning: Story = {
+export const Warning = {
   args: {
     variant: 'warning',
     children: '标签',
   },
 };
 
-export const Error: Story = {
+export const Error = {
   args: {
     variant: 'error',
     children: '标签',
   },
 };
 
-export const AllVariants: Story = {
+export const AllVariants = {
   render: () => (
     <div style={{ display: 'flex', gap: '8px' }}>
       <Tag>标签</Tag>
