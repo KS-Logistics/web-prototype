@@ -1,0 +1,44 @@
+{
+  "common": {
+    "cancel": "取消",
+    "confirm": "确认"
+  },
+  "container": {
+    "form": {
+      "addContainer": "添加集装箱",
+      "editContainer": "编辑集装箱",
+      "enterContainerNumber": "请输入集装箱号",
+      "selectContainerType": "请选择集装箱类型",
+      "enterWeight": "请输入重量",
+      "ton": "吨",
+      "enterDestination": "请输入目的地",
+      "enterLoadingPort": "请输入装货港",
+      "enterDischargePort": "请输入卸货港",
+      "enterVessel": "请输入船名",
+      "enterVoyage": "请输入航次号",
+      "enterETA": "请输入预计到达时间"
+    },
+    "details": {
+      "containerNumber": "集装箱号",
+      "containerType": "集装箱类型",
+      "weight": "重量",
+      "destination": "目的地",
+      "loadingPort": "装货港",
+      "dischargePort": "卸货港",
+      "vessel": "船名",
+      "voyage": "航次号",
+      "eta": "预计到达时间"
+    },
+    "validation": {
+      "pleaseEnterContainerNumber": "请输入集装箱号",
+      "pleaseSelectContainerType": "请选择集装箱类型",
+      "pleaseEnterWeight": "请输入重量",
+      "pleaseEnterDestination": "请输入目的地",
+      "pleaseEnterLoadingPort": "请输入装货港",
+      "pleaseEnterDischargePort": "请输入卸货港",
+      "pleaseEnterVessel": "请输入船名",
+      "pleaseEnterVoyage": "请输入航次号",
+      "pleaseEnterETA": "请输入预计到达时间"
+    }
+  }
+} 

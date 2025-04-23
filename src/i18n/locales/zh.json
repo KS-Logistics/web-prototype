@@ -1,0 +1,57 @@
+{
+  "common": {
+    "confirm": "确认",
+    "cancel": "取消",
+    "edit": "编辑",
+    "search": "搜索",
+    "loading": "加载中"
+  },
+  "status": {
+    "inProgress": "进行中",
+    "completed": "已完成"
+  },
+  "container": {
+    "details": {
+      "containerNumber": "集装箱号",
+      "basicInfo": "基本信息",
+      "shippingInfo": "航运信息",
+      "containerType": "箱型",
+      "weight": "货重",
+      "destination": "目的地",
+      "loadingPort": "装货港",
+      "dischargePort": "卸货港",
+      "vessel": "船名",
+      "voyage": "航次",
+      "eta": "预计到达时间",
+      "viewQRCode": "查看二维码"
+    },
+    "form": {
+      "addContainer": "添加集装箱",
+      "editContainer": "编辑集装箱",
+      "enterContainerNumber": "请输入集装箱号",
+      "selectContainerType": "请选择箱型",
+      "enterWeight": "请输入货重",
+      "enterDestination": "请输入目的地",
+      "enterLoadingPort": "请输入装货港",
+      "enterDischargePort": "请输入卸货港",
+      "enterVessel": "请输入船名",
+      "enterVoyage": "请输入航次",
+      "enterETA": "请输入预计到达时间",
+      "ton": "吨"
+    },
+    "validation": {
+      "pleaseEnterContainerNumber": "请输入集装箱号",
+      "pleaseSelectContainerType": "请选择箱型",
+      "pleaseEnterWeight": "请输入货重",
+      "pleaseEnterDestination": "请输入目的地",
+      "pleaseEnterLoadingPort": "请输入装货港",
+      "pleaseEnterDischargePort": "请输入卸货港",
+      "pleaseEnterVessel": "请输入船名",
+      "pleaseEnterVoyage": "请输入航次",
+      "pleaseEnterETA": "请输入预计到达时间"
+    },
+    "search": {
+      "searchContainer": "搜索集装箱"
+    }
+  }
+} 

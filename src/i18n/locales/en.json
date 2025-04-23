@@ -1,0 +1,57 @@
+{
+  "common": {
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "edit": "Edit",
+    "search": "Search",
+    "loading": "Loading"
+  },
+  "status": {
+    "inProgress": "In Progress",
+    "completed": "Completed"
+  },
+  "container": {
+    "details": {
+      "containerNumber": "Container Number",
+      "basicInfo": "Basic Information",
+      "shippingInfo": "Shipping Information",
+      "containerType": "Container Type",
+      "weight": "Weight",
+      "destination": "Destination",
+      "loadingPort": "Loading Port",
+      "dischargePort": "Discharge Port",
+      "vessel": "Vessel",
+      "voyage": "Voyage",
+      "eta": "ETA",
+      "viewQRCode": "View QR Code"
+    },
+    "form": {
+      "addContainer": "Add Container",
+      "editContainer": "Edit Container",
+      "enterContainerNumber": "Enter container number",
+      "selectContainerType": "Select container type",
+      "enterWeight": "Enter weight",
+      "enterDestination": "Enter destination",
+      "enterLoadingPort": "Enter loading port",
+      "enterDischargePort": "Enter discharge port",
+      "enterVessel": "Enter vessel name",
+      "enterVoyage": "Enter voyage number",
+      "enterETA": "Enter ETA",
+      "ton": "ton"
+    },
+    "validation": {
+      "pleaseEnterContainerNumber": "Please enter container number",
+      "pleaseSelectContainerType": "Please select container type",
+      "pleaseEnterWeight": "Please enter weight",
+      "pleaseEnterDestination": "Please enter destination",
+      "pleaseEnterLoadingPort": "Please enter loading port",
+      "pleaseEnterDischargePort": "Please enter discharge port",
+      "pleaseEnterVessel": "Please enter vessel name",
+      "pleaseEnterVoyage": "Please enter voyage number",
+      "pleaseEnterETA": "Please enter ETA"
+    },
+    "search": {
+      "searchContainer": "Search container"
+    }
+  }
+} 

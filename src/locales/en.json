@@ -1,0 +1,44 @@
+{
+  "common": {
+    "cancel": "Cancel",
+    "confirm": "Confirm"
+  },
+  "container": {
+    "form": {
+      "addContainer": "Add Container",
+      "editContainer": "Edit Container",
+      "enterContainerNumber": "Enter container number",
+      "selectContainerType": "Select container type",
+      "enterWeight": "Enter weight",
+      "ton": "ton",
+      "enterDestination": "Enter destination",
+      "enterLoadingPort": "Enter loading port",
+      "enterDischargePort": "Enter discharge port",
+      "enterVessel": "Enter vessel name",
+      "enterVoyage": "Enter voyage number",
+      "enterETA": "Enter ETA"
+    },
+    "details": {
+      "containerNumber": "Container Number",
+      "containerType": "Container Type",
+      "weight": "Weight",
+      "destination": "Destination",
+      "loadingPort": "Loading Port",
+      "dischargePort": "Discharge Port",
+      "vessel": "Vessel",
+      "voyage": "Voyage",
+      "eta": "ETA"
+    },
+    "validation": {
+      "pleaseEnterContainerNumber": "Please enter container number",
+      "pleaseSelectContainerType": "Please select container type",
+      "pleaseEnterWeight": "Please enter weight",
+      "pleaseEnterDestination": "Please enter destination",
+      "pleaseEnterLoadingPort": "Please enter loading port",
+      "pleaseEnterDischargePort": "Please enter discharge port",
+      "pleaseEnterVessel": "Please enter vessel name",
+      "pleaseEnterVoyage": "Please enter voyage number",
+      "pleaseEnterETA": "Please enter ETA"
+    }
+  }
+} 
